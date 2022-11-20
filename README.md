@@ -29,7 +29,6 @@ You need to install the css library yourself.
   - `singleUserPage`: renders specific user data and their posts
   - `PostPage`: renders the details of a post (title, body, comments)
 
-
 ### Step 4
 
 - Set up all the redux boilerblate for the project
@@ -43,11 +42,18 @@ Take your time to implement the following features:
 
 - Add a button to the `HomePage` that allows you to add a new post
 - Add listing of of nested resources (comments) to the `PostPage`
-- Add more features and make the project look good
+- Add more features and make the project look good. You can use any css library you want (css, scss, Material UI, etc.)
+
 ## References
 
 Homepage:
-![homepage](media/home.png)
+![homepage/all posts](media/HomePage.png)
 
-Country page:
-![country page](media/country.png)
+Users page:
+![all users Page](media/UsersPage.png)
+
+Single Post page:
+![single users Page](media/SinglePostPage.png)
+
+Single User page:
+![single user Page](media/SingleUserPage.png)
