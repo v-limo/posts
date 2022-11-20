@@ -14,11 +14,11 @@ You need to install the css library yourself.
 
 - Fetch all the posts and return the data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/posts)
 
-- Given a post name as argument, returns the data about that country. If the post doesn't exist, return an error message.
+- Given a post name as argument, returns the data about that post and user. If the postor user doesn't exist, return an error message.
 
 ### Step 2
 
-- Render the data of all the posts (from Step 1). you can use any css library you want (css, scss, Material UI, etc.)
+- Render the data of all the posts and users (from Step 1). you can use any css library you want (css, scss, Material UI, etc.)
 - Make sure to split the component into smaller components (e.g. Post, PostList, etc.)
 
 ### Step 3
