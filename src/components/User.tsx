@@ -1,13 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom"
 
-import { useAppSelector } from '../app/hooks';
-import { UserProps } from '../types/userTypes';
+import { useAppSelector } from "../app/hooks"
+import { UserProps } from "../types/userTypes"
 
 function User({ user }: UserProps) {
   const { posts } = useAppSelector((state) => state.posts)
 
-
- const findUserPosts = (id: number) => {
+  const findUserPosts = (id: number) => {
     return posts.filter((post) => post.userId === id)
   }
 
@@ -33,13 +32,15 @@ function User({ user }: UserProps) {
       </p>
       <hr className="my-2 mx-4" />
 
-      <p className="text-gray-500">
-        <Link to={`/users/${user.id}/posts`}>
-          <span className="text-blue-500 hover:text-blue-700">
-            {findUserPosts(user.id).length} posts
-          </span>
-        </Link>
-      </p>
+      <div>
+        <p className="text-gray-500">
+          <Link to={`/users/${user.id}/posts`}>
+            <span className="text-blue-500 hover:text-blue-700">
+              {findUserPosts(user.id).length} posts
+            </span>
+          </Link>
+        </p>
+      </div>
     </div>
   )
 }

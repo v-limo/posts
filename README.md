@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+# Frontend React Project - Posts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an extra and optional React project to improve your skills with React. It is a simple project that allows you to create posts and view them. It is a good project to practice your skills with React and Redux.
 
-## Available Scripts
+## Instructions
 
-In the project directory, you can run:
+### General
 
-### `npm start`
+Fork this repo, then clone the **fork** to your machine and start working on it. You can open a pull request as soon as possible (no need to wait until finished)
+For styling, you can use whatever css solution you want: css, scss, Material UI, etc.
+You need to install the css library yourself.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Step 1
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Fetch all the posts and return the data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/posts)
 
-### `npm test`
+- Given a post name as argument, returns the data about that country. If the post doesn't exist, return an error message.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Step 2
 
-### `npm run build`
+- Render the data of all the posts (from Step 1). you can use any css library you want (css, scss, Material UI, etc.)
+- Make sure to split the component into smaller components (e.g. Post, PostList, etc.)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Step 3
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Integrate react router into your project and create atleast 2 pages:
+  - `HomePage`: renders the list of posts
+  - `UsersPage`: renders the list of users (you can fetch the data from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users))
+  - `singleUserPage`: renders specific user data and their posts
+  - `PostPage`: renders the details of a post (title, body, comments)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Step 4
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Set up all the redux boilerblate for the project
+- Everything related to redux stays in one folder: reducers, store
+- Think about what reducer you're going to make and write them accordingly
+- Move the state that contains all posts, users and comments to redux store
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Step 5
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Take your time to implement the following features:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Add a button to the `HomePage` that allows you to add a new post
+- Add listing of of nested resources (comments) to the `PostPage`
+- Add more features and make the project look good
+## References
 
-## Learn More
+Homepage:
+![homepage](media/home.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Country page:
+![country page](media/country.png)

@@ -27,7 +27,8 @@ function SingleUserPage() {
   return (
     <div className="bg-gray-200  p-20 pt-2 min-h-screen  display: flex flex-col justify-center items-center">
       <User user={user} />
-      <h2 className="text-2xl font-bold text-center text-gray-700 my-3 underline">
+
+      <h2 className="text-2xl font-bold text-center text-blue-700 my-3 p-2 ">
         Posts by
         <span className="text-blue-700 font-bold underline m-2">
           <Link to={`/users/${user.id}`}>{user.name}</Link>

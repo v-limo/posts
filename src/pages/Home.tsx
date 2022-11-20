@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react"
 
-import { useAppDispatch, useAppSelector } from '../app/hooks';
-import Posts from '../components/Posts';
-import { fetchPosts, search } from '../features/postSlice';
-import { fetchUsers } from '../features/usersSlice';
+import { useAppDispatch, useAppSelector } from "../app/hooks"
+import Posts from "../components/Posts"
+import { fetchPosts, search } from "../features/postsSlice"
+import { fetchUsers } from "../features/usersSlice"
 
 function Home() {
   const [input, setInput] = useState("")
